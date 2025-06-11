@@ -28,6 +28,7 @@ jobs:
         with:
           digger-spec: ${{ inputs.spec }}
           setup-aws: false
+          setup-terraform: true
           disable-locking: true
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
